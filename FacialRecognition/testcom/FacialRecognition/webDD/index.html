@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Face counter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<body>
+    <div class="container">
+        <div class="row" style="background-color: rgba(24, 86, 219, 0.74)">
+            <div class="col-10 mx-auto">
+                <center>
+                    <h1 style="color: #FFFFFF">People Counter System</h1>
+                </center>
+            </div>
+        </div>
+        <div class="row" style="background-color:dodgerblue">
+            <div class="col-10 mx-auto">
+                <center>
+                    <h3 id="total"></h3>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">ชื่อ-สกุล</th>
+                            <th scope="col">รหัสนักศึกษา</th>
+                            <th scope="col">นักศึกษาชั้นปี</th>
+                            <th scope="col">เวลาล่าสุด</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>นายธีรภัทร์ รุ่มรวย</td>
+                            <td>2581031741120</td>
+                            <td>4</td>
+                            <td id="Aum"></td>
+                            <td><input type="button" name="Aum" value="details" class="btn btn-info view"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>นายจตุรัส โต๊ะสกุล</td>
+                            <td>2581031741104</td>
+                            <td>4</td>
+                            <td id="June"></td>
+                            <td><input type="button" name="June" value="details" class="btn btn-info view"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>นายภราดร เสียงใหญ่</td>
+                            <td>2581031741128</td>
+                            <td>4</td>
+                            <td id="Pe"></td>
+                            <td><input type="button" name="Pe" value="details" class="btn btn-info view"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>นายณัฐพงศ์ สุขแดง</td>
+                            <td>2581031741111</td>
+                            <td>4</td>
+                            <td id="Jame"></td>
+                            <td><input type="button" name="Jame" value="details" class="btn btn-info view"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>นายพิเชษฐ์ อำภารักษ์</td>
+                            <td>2581031741150</td>
+                            <td>4</td>
+                            <td id="Pichet"></td>
+                            <td><input type="button" name="Pichet" value="details" class="btn btn-info view"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>นายเดชาพล ศรีแตร</td>
+                            <td>2581031741116</td>
+                            <td>4</td>
+                            <td id="Phon"></td>
+                            <td><input type="button" name="Phon" value="details" class="btn btn-info view"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>นายอรรถพล เรือนจันทร์</td>
+                            <td>2581031741156</td>
+                            <td>4</td>
+                            <td id="Att"></td>
+                            <td><input type="button" name="Att" value="details" class="btn btn-info view"></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">8</th>
+                            <td>นายธนดล ผิวอ่อน</td>
+                            <td>2581031741118</td>
+                            <td>4</td>
+                            <td id="Neung"></td>
+                            <td><input type="button" name="Neung" value="details" class="btn btn-info view"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>unknown</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td id="unknown"></td>
+                            <td><input type="button" name="unknown" value="details" class="btn btn-info view"></td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="detail">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC6gen5UXd3Ud81DWqXhZbRq5E43XZXYe8",
+    authDomain: "face-counter-2d3b8.firebaseapp.com",
+    databaseURL: "https://face-counter-2d3b8.firebaseio.com",
+    projectId: "face-counter-2d3b8",
+    storageBucket: "face-counter-2d3b8.appspot.com",
+    messagingSenderId: "1081270053351"
+  };
+  firebase.initializeApp(config);
+//   require('modal.html')
+</script>
+
+<script src="app.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.view').click(function(){
+            var id = $(this).attr("name");
+            $('#Modal').modal('show');
+
+            var ref = firebase.database().ref(id);
+            var buff = "";
+            ref.orderByValue().on("value", function(snap){
+                snap.forEach(function(data){
+                    buff += data.val();
+                    buff += '<br>';
+                })
+                $('#detail').html(buff);
+                $('#ModalLabel').html('Total: '+snap.numChildren());
+                buff = "";
+            })
+        })
+    })
+    var total = 0;
+    var root = firebase.database().ref('/');
+    root.on("value",function(snap){
+        snap.forEach(function(data){
+            total += data.numChildren();
+        })
+        $('#total').html('Total: '+total);
+        total = 0;
+        // console.log(total);
+    })
+</script>
